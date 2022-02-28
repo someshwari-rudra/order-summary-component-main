@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Pale_blue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--Very_pale_blue: hsl(225, 100%, 98%);
+--Desaturated_blue: hsl(224, 23%, 55%);
+--Dark_blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Pale_blue);
+    font-size: 16px;
+}
+.card{
+    width: 380px;
+    background: #fff;
+    border-radius:15px;
+    text-align: center;
+    margin: 1.5rem;
+}
+.card_header img{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom:1rem;
+}
+.card_body{
+    margin: 0rem 1rem;
+}
+.card_title {
+    font-size: .8rem;
+    margin: 0.5rem 0;
+    color: var(--Dark_blue);
+}
+.card_text{
+    padding: 0.5rem 1rem;
+    color:var(--Desaturated_blue);
+}
+.card_AnnualPlan{
+   display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+   background:var(--Very_pale_blue) ;
+}
+.card_AnnualPlan img{
+    height: 100%;
+    width: 100%;
+    background: var(--Pale_blue);
+    border-radius: 50%;
+}
+.card_AnnualPlan ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Anuual_plan{
+    position: relative;
+    right: 24px;
+    font-weight: 700;
+    color:var(--Dark_blue);
+}
+.Anuual_price{
+    position: relative;
+    right: 24px;
+    color: var(--Desaturated_blue);
+}
+.Annual_Change{
+font-size: 13px;
+text-decoration: underline;
+color:var(--Brightblue) ;
+font-weight: 700;
+}
+.proceed{
+    margin: 1.5rem;
+}
+.proceed_btn{
+    background: var(--Brightblue);
+    color: #fff;
+    padding: 13px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    box-shadow: 0px 15px 20px 5px hsl(229, 100%, 95%);
+}
+
+.card_footer p{
+    font-weight: 600;
+    color: var(--Desaturated_blue);
+    margin-bottom: 2rem;
+}
+@media (max-height: 375px) {
+  .container {
+    min-height: 100%;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+    .Anuual_plan{
+    position: relative;
+    right: 11px;
+}
+ .Anuual_plan{
+    position: relative;
+    right: 11px;
+}
+
+}
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: var(--Brightblue);
+}
